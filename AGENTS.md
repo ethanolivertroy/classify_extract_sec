@@ -1145,9 +1145,10 @@ if __name__ == "__main__":
 
 [LlamaCloud](https://cloud.llamaindex.ai/) is a cloud platform provided by LlamaIndex for intelligent document processing.
 
-It is composed of three main services:
+It is composed of four main services:
 
 - [LlamaParse](https://www.llamaindex.ai/llamaparse), for parsing and extracting text, charts, tables and images from unstructured files
+- LlamaClassify, for automatically categorizing documents into types using natural-language rules
 - [LlamaExtract](https://www.llamaindex.ai/llamaextract), for extracting structured data from files following specific patterns
 - LlamaCloud Index, for storing, indexing and retrieving documents, especially oriented towards retrieval-augmented generation.
 
