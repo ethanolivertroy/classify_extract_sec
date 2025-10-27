@@ -5,8 +5,86 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type Hello = string;
+/**
+ * Type of SEC filing (10-K, 10-Q, or 8-K)
+ */
+export type DocumentType = string | null;
+/**
+ * Total revenue for the fiscal year
+ */
+export type TotalRevenue = string | null;
+/**
+ * Net income for the fiscal year
+ */
+export type NetIncome = string | null;
+/**
+ * Total assets at the end of the fiscal year
+ */
+export type TotalAssets = string | null;
+/**
+ * Total liabilities at the end of the fiscal year
+ */
+export type TotalLiabilities = string | null;
+/**
+ * Revenue for the quarter
+ */
+export type QuarterlyRevenue = string | null;
+/**
+ * Net income for the quarter
+ */
+export type QuarterlyNetIncome = string | null;
+/**
+ * Total assets at the end of the quarter
+ */
+export type TotalAssets1 = string | null;
+/**
+ * Total liabilities at the end of the quarter
+ */
+export type TotalLiabilities1 = string | null;
+/**
+ * List of events reported in the 8-K filing
+ */
+export type Events = Event8K[] | null;
+/**
+ * Category of the event (e.g., Item 1.01, Item 2.02)
+ */
+export type Category = string | null;
+/**
+ * Description of the event reported in the 8-K
+ */
+export type Description = string | null;
 
 export interface MySchema {
-  hello: Hello;
+  document_type?: DocumentType;
+  /**
+   * Extracted data for 10-K filings
+   */
+  form_10k_data?: Form10KData | null;
+  /**
+   * Extracted data for 10-Q filings
+   */
+  form_10q_data?: Form10QData | null;
+  /**
+   * Extracted data for 8-K filings
+   */
+  form_8k_data?: Form8KData | null;
+}
+export interface Form10KData {
+  total_revenue?: TotalRevenue;
+  net_income?: NetIncome;
+  total_assets?: TotalAssets;
+  total_liabilities?: TotalLiabilities;
+}
+export interface Form10QData {
+  quarterly_revenue?: QuarterlyRevenue;
+  quarterly_net_income?: QuarterlyNetIncome;
+  total_assets?: TotalAssets1;
+  total_liabilities?: TotalLiabilities1;
+}
+export interface Form8KData {
+  events?: Events;
+}
+export interface Event8K {
+  category?: Category;
+  description?: Description;
 }
