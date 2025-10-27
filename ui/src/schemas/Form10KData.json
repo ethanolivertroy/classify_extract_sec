@@ -1,0 +1,58 @@
+{
+  "properties": {
+    "total_revenue": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Total revenue for the fiscal year",
+      "title": "Total Revenue"
+    },
+    "net_income": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Net income for the fiscal year",
+      "title": "Net Income"
+    },
+    "total_assets": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Total assets at the end of the fiscal year",
+      "title": "Total Assets"
+    },
+    "total_liabilities": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Total liabilities at the end of the fiscal year",
+      "title": "Total Liabilities"
+    }
+  },
+  "title": "Form10KData",
+  "type": "object"
+}

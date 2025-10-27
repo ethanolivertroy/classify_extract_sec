@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "category": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Category of the event (e.g., Item 1.01, Item 2.02)",
+      "title": "Category"
+    },
+    "description": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Description of the event reported in the 8-K",
+      "title": "Description"
+    }
+  },
+  "title": "Event8K",
+  "type": "object"
+}
