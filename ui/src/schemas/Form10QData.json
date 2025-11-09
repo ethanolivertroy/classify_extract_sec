@@ -1,0 +1,58 @@
+{
+  "properties": {
+    "quarterly_revenue": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Revenue for the quarter",
+      "title": "Quarterly Revenue"
+    },
+    "quarterly_net_income": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Net income for the quarter",
+      "title": "Quarterly Net Income"
+    },
+    "total_assets": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Total assets at the end of the quarter",
+      "title": "Total Assets"
+    },
+    "total_liabilities": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Total liabilities at the end of the quarter",
+      "title": "Total Liabilities"
+    }
+  },
+  "title": "Form10QData",
+  "type": "object"
+}
